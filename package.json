@@ -1,4 +1,8 @@
 {
+	"name": "contract-tests-example",
+	"scripts": {
+		"test": "lerna run test --stream --concurrency 1"
+	},
 	"devDependencies": {
 		"lerna": "^2.7.0"
 	}

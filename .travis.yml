@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - packages/backend-for-webui/node_modules
+    - packages/job-service/node_modules
+    - packages/web-ui/node_modules
+before_script:
+  - lerna bootstrap
+script: 
+  - npm test
+  - cd packages/job-service
+  - node src/index.js &
+  - npm run test:provider
+branches:
+  only:
+    - master
+    - wip

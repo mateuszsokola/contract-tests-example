@@ -1,0 +1,22 @@
+{
+  "name": "job-service",
+  "version": "1.0.0",
+  "description": "a job micro-service",
+  "main": "index.js",
+  "scripts": {
+    "test:provider": "pact verify -u $(pwd)/../../pacts/backend-for-webui-job-service.json -b http://localhost:3001 --provider-states-setup-url=http://localhost:3001/setup",
+    "dev": "cross-env NODE_ENV=development node src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "Mateusz Sokola",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^6.11.0",
+    "cross-env": "^5.1.3"
+  }
+}

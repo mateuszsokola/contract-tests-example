@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobPage /> displays a job posting 1`] = `"<div><h1>Senior Front End Developer</h1><span class=\\"location\\">Vienna</span><span>43.400,00 – 58.800,00 EUR</span><time datetime=\\"1518282760000\\">a month ago</time></div>"`;
+
+exports[`<JobPage /> displays a loading info 1`] = `"<span>Loading…</span>"`;
+
+exports[`<JobPage /> displays a not found 1`] = `"<div><h1>Not Found</h1><span>Proceed to <a href=\\"/\\">job listing</a></span></div>"`;

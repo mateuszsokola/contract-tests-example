@@ -1,0 +1,49 @@
+@import "~@blueprintjs/core/dist/blueprint.css";
+@import "~@blueprintjs/core/src/common/variables";
+
+body {
+    background: $light-gray5;
+    margin: 0;
+}
+
+.pt-job-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        padding: $pt-grid-size $pt-grid-size * 1.5;
+
+        &:nth-child(odd) {
+            background: rgba($gray5, 0.2);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            color: $dark-gray5;
+        
+            &:hover {
+                text-decoration: none;
+            }
+
+            & > span {
+
+                &:first-child {
+                    width: 70%;
+                }
+            }
+        }    
+
+        .title {
+            font-weight: bold;
+            display: block;
+        }
+    }
+}

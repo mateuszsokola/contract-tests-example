@@ -1,0 +1,26 @@
+{
+  "name": "backend-for-webui",
+  "version": "1.0.0",
+  "description": "the back end for front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --setupFiles ./pact.setup.js",
+    "start": "node src/index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Mateusz Sokola",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^5.5.0",
+    "jest": "^22.1.4"
+  }
+}
